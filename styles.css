@@ -26,6 +26,10 @@ h1{
 }
  #no
  {
-    margin-left: 50px;
+    margin-left: 25px;
+ }
+ #yes
+ {
+    margin-right: 25px;
  }
  
