@@ -22,7 +22,7 @@
         x++;
         if(x >= 5)
         {
-            document.querySelector('h1').innerHTML = 'There is not any (NO) option, try selecting!';
+            document.querySelector('h1').innerHTML = 'I am not going to select no';
         }
     }
    
