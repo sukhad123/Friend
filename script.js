@@ -14,8 +14,8 @@
  document.addEventListener("DOMContentLoaded",()=>{
     let x = 0;
     document.querySelector("#no").onclick = ()=>{
-        const randomLeft = Math.floor(Math.random() * window.innerWidth);
-        const randomTop = Math.floor(Math.random() * window.innerHeight);
+        const randomLeft = Math.floor(Math.random() * (window.innerWidth-50));
+        const randomTop = Math.floor(Math.random() * (window.innerHeight-50));
         document.querySelector("#no").style.position = "absolute";
         document.querySelector("#no").style.left = `${randomLeft}px`;
         document.querySelector("#no").style.top = `${randomTop}px`;
