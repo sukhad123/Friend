@@ -30,6 +30,8 @@ x++;
         if (x == 2) {
             heading.innerHTML = 'Ma pani Nepali ho! 🇳🇵🥺';
         }
+
+        //a
         if (x == 3) {
             heading.innerHTML = 'Feri socha hai ramro sanga 😏💞';
         }
