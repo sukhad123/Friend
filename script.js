@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // No button click event
-    noButton.addEventListener("onclick", () => {
+    noButton.addEventListener("mouseover", () => {
             // Ensure the No button is positioned properly
     noButton.style.position = "absolute";
         imageElement.src = 'https://cdn-ak.f.st-hatena.com/images/fotolife/n/nativecamp_official/20220221/20220221122300.png';
