@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const heading = document.querySelector("h1");
     let x = 0;
 
+    // Ensure the No button is positioned properly
+    noButton.style.position = "absolute";
+
     // Yes button click event
     yesButton.onclick = () => {
         imageElement.src = 'https://www.creativefabrica.com/wp-content/uploads/2022/09/18/I-LOVE-YOU-VECTOR-DESIGN-Graphics-38781369-1.jpg';
@@ -13,11 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // No button click event
-    noButton.onclick = () => {
-        const randomLeft = Math.floor(Math.random() * (window.innerWidth - 100)); 
-        const randomTop = Math.floor(Math.random() * (window.innerHeight - 100)); 
+    noButton.addEventListener("mouseover", () => {
+        const randomLeft = Math.random() * (window.innerWidth - noButton.clientWidth);
+        const randomTop = Math.random() * (window.innerHeight - noButton.clientHeight);
 
-        noButton.style.position = "absolute";
         noButton.style.left = `${randomLeft}px`;
         noButton.style.top = `${randomTop}px`;
 
@@ -25,5 +27,5 @@ document.addEventListener("DOMContentLoaded", () => {
         if (x >= 5) {
             heading.innerHTML = 'You have to go with me; You cannot say no';
         }
-    };
+    });
 });
