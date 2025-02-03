@@ -5,8 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const heading = document.querySelector("h1");
     let x = 0;
 
-    // Ensure the No button is positioned properly
-    noButton.style.position = "absolute";
+
 
     // Yes button click event
     yesButton.onclick = () => {
@@ -17,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // No button click event
     noButton.addEventListener("mouseover", () => {
+            // Ensure the No button is positioned properly
+    noButton.style.position = "absolute";
         imageElement.src = 'https://cdn-ak.f.st-hatena.com/images/fotolife/n/nativecamp_official/20220221/20220221122300.png';
         const randomLeft = Math.random() * (window.innerWidth - noButton.clientWidth);
         const randomTop = Math.random() * (window.innerHeight - noButton.clientHeight);
