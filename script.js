@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // No button hover event
-    noButton.addEventListener("mouseover", () => {
+    noButton.addEventListener("onclick", () => {
         imageElement.src = 'https://cdn-ak.f.st-hatena.com/images/fotolife/n/nativecamp_official/20220221/20220221122300.png';
         
         setRandomPosition(); // Move No button on hover
