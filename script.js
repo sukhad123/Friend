@@ -11,6 +11,19 @@
     }
  })
 
+ document.addEventListener("DOMContentLoaded",()=>
+    {
+       const imageElement = document.getElementById("image");
+       document.querySelector("#no").onclick= ()=>
+       {
+       imageElement.src = 'http://i.123g.us/c/efeb_valen_bemyvalen/pc/107090_pc.jpg'
+   
+       document.querySelector('h1').innerHTML = 'Please be my valentine';
+       document.querySelector('#button').innerHTML  = '';
+         
+       }
+    })
+
  document.addEventListener("DOMContentLoaded",()=>{
     let x = 0;
     document.querySelector("#no").onclick = ()=>{
@@ -22,7 +35,7 @@
         x++;
         if(x >= 5)
         {
-            document.querySelector('h1').innerHTML = 'I am not going to let you to select no';
+            document.querySelector('h1').innerHTML = 'You have to go with me; You cannot say no';
         }
     }
    
