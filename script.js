@@ -3,7 +3,7 @@
     const imageElement = document.getElementById("image");
     document.querySelector("#yes").onclick= ()=>
     {
-    imageElement.src = 'https://d.newsweek.com/en/full/2090958/two-identical-cats-cuddling-bed.webp?w=790&f=316546b96ea8b3cb3f7968d8ab161015'
+    imageElement.src = 'https://www.creativefabrica.com/wp-content/uploads/2022/09/18/I-LOVE-YOU-VECTOR-DESIGN-Graphics-38781369-1.jpg'
 
     document.querySelector('h1').innerHTML = 'I know You love me!';
     document.querySelector('#button').innerHTML  = '';
