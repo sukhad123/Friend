@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // No button click event
     noButton.addEventListener("mouseover", () => {
+        imageElement.src = 'https://cdn-ak.f.st-hatena.com/images/fotolife/n/nativecamp_official/20220221/20220221122300.png';
         const randomLeft = Math.random() * (window.innerWidth - noButton.clientWidth);
         const randomTop = Math.random() * (window.innerHeight - noButton.clientHeight);
 
