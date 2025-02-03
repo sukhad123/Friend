@@ -5,6 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const heading = document.querySelector("h1");
     let x = 0;
 
+    const randomLeft = Math.random() * (window.innerWidth - noButton.clientWidth);
+    const randomTop = Math.random() * (window.innerHeight - noButton.clientHeight);
+
+    noButton.style.left = `${randomLeft}px`;
+    noButton.style.top = `${randomTop}px`;
 
 
     // Yes button click event
