@@ -28,10 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // Function to move No button
-    function moveNoButton() {
-        imageElement.src = 'https://cdn-ak.f.st-hatena.com/images/fotolife/n/nativecamp_official/20220221/20220221122300.png';
-        
-        setRandomPosition(); // Move No button on hover or touch
+    function moveNoButton(event) {
+        event.preventDefault(); // Prevent default touch behavior on mobile
+        setRandomPosition(); // Move No button
 
         x++;
         if (x == 1) {
@@ -52,6 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // No button events for desktop and mobile
-    noButton.addEventListener("mouseover", moveNoButton);
-    noButton.addEventListener("touchstart", moveNoButton); // For mobile
+    noButton.addEventListener("mouseover", moveNoButton); // Desktop
+    noButton.addEventListener("touchend", moveNoButton); // Mobile (use touchend for multiple triggers)
 });
