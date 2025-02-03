@@ -52,5 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // No button events for desktop and mobile
     noButton.addEventListener("mouseover", moveNoButton); // Desktop
-    noButton.addEventListener("touchend", moveNoButton); // Mobile (use touchend for multiple triggers)
+    noButton.addEventListener("touchmove", moveNoButton); // Mobile (use touchmove for continuous movement)
+    noButton.addEventListener("touchend", moveNoButton);  // Mobile (final click event)
 });
