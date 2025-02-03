@@ -16,9 +16,9 @@
        const imageElement = document.getElementById("image");
        document.querySelector("#no").onclick= ()=>
        {
-       imageElement.src = 'http://i.123g.us/c/efeb_valen_bemyvalen/pc/107090_pc.jpg'
+       imageElement.src = 'https://cdn-ak.f.st-hatena.com/images/fotolife/n/nativecamp_official/20220221/20220221122300.png'
    
-       document.querySelector('h1').innerHTML = 'Please be my valentine';
+       document.querySelector('h1').innerHTML = 'Please ma pani nepali ho';
        document.querySelector('#button').innerHTML  = '';
          
        }
