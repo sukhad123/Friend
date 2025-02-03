@@ -23,10 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
         noButton.style.left = `${randomLeft}px`;
         noButton.style.top = `${randomTop}px`;
+x++;
+        if (x == 1) {
+            heading.innerHTML = 'Think again! 🤨👉👈';
+        }
+        if (x == 2) {
+            heading.innerHTML = 'Ma pani Nepali ho! 🇳🇵🥺';
+        }
+        if (x == 3) {
+            heading.innerHTML = 'Feri socha hai ramro sanga 😏💞';
+        }
+        if (x == 4) {
+            heading.innerHTML = 'Paxi regret tw holani feri 😭💔';
+        }
 
-        x++;
         if (x >= 5) {
-            heading.innerHTML = 'You have to go with me; You cannot say no';
+            heading.innerHTML = 'Anga NO click garnai mildaina 🚫😤💘';
         }
     });
 });
