@@ -27,12 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#button").innerHTML = '';
     };
 
-    // No button hover event
-    noButton.addEventListener("onclick", () => {
+    // Function to move No button
+    function moveNoButton() {
         imageElement.src = 'https://cdn-ak.f.st-hatena.com/images/fotolife/n/nativecamp_official/20220221/20220221122300.png';
         
-        setRandomPosition(); // Move No button on hover
-        
+        setRandomPosition(); // Move No button on hover or touch
+
         x++;
         if (x == 1) {
             heading.innerHTML = 'Think again! 🤨👉👈';
@@ -49,5 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (x >= 5) {
             heading.innerHTML = 'Anga NO click garnai mildaina 🚫😤💘';
         }
-    });
+    }
+
+    // No button events for desktop and mobile
+    noButton.addEventListener("mouseover", moveNoButton);
+    noButton.addEventListener("touchstart", moveNoButton); // For mobile
 });
