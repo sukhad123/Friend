@@ -23,7 +23,7 @@
         document.querySelector("#no").style.left = `${randomLeft}px`;
         document.querySelector("#no").style.top = `${randomTop}px`;
         x++;
-        imageElement.src = 'https://cdn-ak.f.st-hatena.com/images/fotolife/n/nativecamp_official/20220221/20220221122300.png'
+        // imageElement.src = 'https://cdn-ak.f.st-hatena.com/images/fotolife/n/nativecamp_official/20220221/20220221122300.png'
         if(x >= 5)
         {
             document.querySelector('h1').innerHTML = 'You have to go with me; You cannot say no';
