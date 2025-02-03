@@ -1,35 +1,39 @@
-body{
-background-color: antiquewhite;
+body {
+    background-color: antiquewhite;
 }
-#image
-{
+
+#image {
     width: 300px;
 }
-.first
-{
+
+.first {
     margin-top: 200px;
     display: flex;
     justify-content: center;
-    
-    
 }
-h1{
+
+h1 {
     text-align: center;
 }
- 
-#button{
-     
+
+/* Center the buttons properly */
+#button {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 50px; /* Adds space between buttons */
     margin-top: 50px;
-    margin-left: 50px;
 }
- #no
- {
-    margin-left: 25px;
- }
- #yes
- {
-    margin-right: 40px;
- }
- 
+
+/* Individual button spacing */
+#yes, #no {
+    padding: 12px 24px; /* Make buttons bigger */
+    font-size: 18px;
+    border-radius: 10px; /* Rounded buttons */
+}
+
+/* Optional hover effect */
+#yes:hover, #no:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    transition: 0.2s ease-in-out;
+}
